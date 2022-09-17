@@ -11,16 +11,16 @@ import IMG6 from '../../assets/portfolio6.jpg';
 function Portfolio() {
     const dataPortfolio = [
         {
-            image: IMG1,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/unghung18/pokedex-app',
-            url: 'https://pokedex-app-sooty.vercel.app/'
+            image: IMG2,
+            title: 'Movie app with Api',
+            github: 'https://github.com/unghung18/tmovie',
+            url: 'https://tmovie-eight.vercel.app/'
         },
         {
-            image: IMG2,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            url: 'https://dribbble.com/'
+            image: IMG1,
+            title: 'Pokedex app with Api',
+            github: 'https://github.com/unghung18/pokedex-app',
+            url: 'https://pokedex-app-sooty.vercel.app/'
         },
         {
             image: IMG3,
