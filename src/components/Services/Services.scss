@@ -1,0 +1,76 @@
+@use '../../scss/' as *;
+
+.services__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+
+    .service {
+        background: $color-bg-variant;
+        border: 1px solid $color-primary;
+        height: fit-content;
+        transition: $transition;
+        border-radius: 0 0 2rem 2rem;
+
+        &:hover {
+            background: transparent;
+            border-color: $color-primary-variant;
+            cursor: default;
+        }
+
+        .service__header {
+            background: $color-primary;
+            border-radius: 0 0 2rem 2rem;
+            padding: 2rem;
+            box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+
+            h3 {
+                color: $color-bg;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        .service__list {
+            padding: 2rem;
+
+
+            .service__list-item {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 0.8rem;
+
+                .service__list-icon {
+                    font-size: 2rem;
+                    margin-top: 0.3rem;
+                    color: $color-primary;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@include tablet {
+    .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        .service {
+            height: auto;
+        }
+    }
+
+}
+
+@include mobile {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

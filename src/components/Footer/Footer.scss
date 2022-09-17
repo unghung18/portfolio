@@ -1,0 +1,57 @@
+@use '../../scss/' as *;
+
+footer {
+    background-color: $color-bg-variant;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+
+    a {
+        color: $color-light;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .permalinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer__copyright {
+        margin-bottom: 4rem;
+        color: $color-light;
+    }
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+
+@include mobile {
+    footer {
+
+        .permalinks {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer__socials {
+            margin-bottom: 2.6rem;
+        }
+    }
+}

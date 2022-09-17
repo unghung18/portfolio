@@ -1,0 +1,51 @@
+@use '../../scss/' as *;
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+
+    .portfolio__item {
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        padding: 1.3rem;
+        overflow: hidden;
+        background: $color-bg-variant;
+        transition: $transition;
+
+        &:hover {
+            background: transparent;
+            border-color: $color-primary-variant;
+        }
+
+        .portfolio__item-img {
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        h3 {
+            margin: 1.2rem 0 2rem;
+        }
+
+        .btn {
+            padding: 0.2rem;
+            margin-right: 0.8rem;
+        }
+    }
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@include tablet {
+
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@include mobile {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
