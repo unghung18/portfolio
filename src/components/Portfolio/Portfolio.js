@@ -13,38 +13,38 @@ function Portfolio() {
         {
             image: IMG1,
             title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            github: 'https://github.com/unghung18/pokedex-app',
+            url: 'https://pokedex-app-sooty.vercel.app/'
         },
         {
             image: IMG2,
             title: 'This is a portfolio item title',
             github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            url: 'https://dribbble.com/'
         },
         {
             image: IMG3,
             title: 'This is a portfolio item title',
             github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            url: 'https://dribbble.com/'
         },
         {
             image: IMG4,
             title: 'This is a portfolio item title',
             github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            url: 'https://dribbble.com/'
         },
         {
             image: IMG5,
             title: 'This is a portfolio item title',
             github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            url: 'https://dribbble.com/'
         },
         {
             image: IMG6,
             title: 'This is a portfolio item title',
             github: 'https://github.com/ronglon182',
-            drible: 'https://dribbble.com/'
+            url: 'https://dribbble.com/'
         },
 
     ]
@@ -61,7 +61,7 @@ function Portfolio() {
                         </div>
                         <h3>{item.title}</h3>
                         <a href={item.github} target='_blank' rel="noreferrer" className="btn">Github</a>
-                        <a href={item.drible} target='_blank' rel="noreferrer" className="btn btn-primary">Live Demo</a>
+                        <a href={item.url} target='_blank' rel="noreferrer" className="btn btn-primary">Live Demo</a>
                     </article>
                 ))}
             </div>
