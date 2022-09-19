@@ -13,7 +13,7 @@ function Portfolio() {
             image: IMG3,
             title: 'LearnApp',
             github: 'https://github.com/unghung18/LearnApp',
-            url: 'https://ornate-eclair-f8454b.netlify.app'
+            url: 'https://master--ornate-eclair-f8454b.netlify.app/'
         },
         {
             image: IMG1,
