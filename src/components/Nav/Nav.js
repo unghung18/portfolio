@@ -13,7 +13,6 @@ function Nav() {
             <a onClick={() => setActiveLink('#')} className={activeLink === '#' ? 'active' : ''} href='#'><AiOutlineHome /></a>
             <a onClick={() => setActiveLink('#about')} className={activeLink === '#about' ? 'active' : ''} href="#about"><AiOutlineUser /></a>
             <a onClick={() => setActiveLink('#experience')} className={activeLink === '#experience' ? 'active' : ''} href="#experience"><BiBook /></a>
-            <a onClick={() => setActiveLink('#services')} className={activeLink === '#services' ? 'active' : ''} href="#services"><RiServiceLine /></a>
             <a onClick={() => setActiveLink('#contact')} className={activeLink === '#contact' ? 'active' : ''} href="#contact"><BiMessageSquareDetail /></a>
         </nav>
     );

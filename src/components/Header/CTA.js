@@ -1,5 +1,6 @@
-import React from 'react'
-import Cv from '../../assets/cv.pdf'
+import React from 'react';
+import Cv from '../../assets/Giang-Ung-Hung-CV.pdf';
+
 const CTA = () => {
     return (
         <div className='cta'>

@@ -1,6 +1,5 @@
 import React from "react";
 import './About.scss'
-import Me from '../../assets/me-about.jpg';
 import { FaAward, FaUserFriends } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
 
@@ -13,7 +12,7 @@ function About() {
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-img">
-                        <img src={Me} alt="ava" />
+                        <h3>Ảnh đẹp sẽ ở đây</h3>
                     </div>
                 </div>
 
@@ -21,13 +20,13 @@ function About() {
                     <div className="about__cards">
                         <article className="about__card">
                             <FaAward className="about__icon" />
-                            <h3>01+</h3>
+                            <h3>1+</h3>
                             <small>Years Experience</small>
                         </article>
 
                         <article className="about__card">
                             <FaUserFriends className="about__icon" />
-                            <h3>20+</h3>
+                            <h3>6+</h3>
                             <small>Completed projects</small>
                         </article>
 
@@ -37,7 +36,7 @@ function About() {
                             <small>Companies worked</small>
                         </article>
                     </div>
-                    <p className="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <p className="about__text">With nearly 4 months of selft-stydy at home . I am very much looking forward to becoming a Web Developer. Having a solid knowledge of Html, Css, Javascript, MERN and other skills that i hone daily. In the next year, I want tobecome a full-fledged developer on the way to workand accompany thecompany which can help me develop myself as well as contribute a lot to the development of the company.</p>
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>
                 </div>
             </div>

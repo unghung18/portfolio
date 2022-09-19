@@ -5,48 +5,40 @@ import IMG2 from '../../assets/portfolio2.jpg';
 import IMG3 from '../../assets/portfolio3.jpg';
 import IMG4 from '../../assets/portfolio4.jpg';
 import IMG5 from '../../assets/portfolio5.png';
-import IMG6 from '../../assets/portfolio6.jpg';
 
 
 function Portfolio() {
     const dataPortfolio = [
         {
-            image: IMG2,
-            title: 'Movie app with Api',
-            github: 'https://github.com/unghung18/tmovie',
-            url: 'https://tmovie-eight.vercel.app/'
+            image: IMG3,
+            title: 'LearnApp',
+            github: 'https://github.com/unghung18/LearnApp',
+            url: 'https://ornate-eclair-f8454b.netlify.app'
         },
         {
             image: IMG1,
-            title: 'Pokedex app with Api',
+            title: 'Pokedex App with PokeApi',
             github: 'https://github.com/unghung18/pokedex-app',
             url: 'https://pokedex-app-sooty.vercel.app/'
         },
         {
-            image: IMG3,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            url: 'https://dribbble.com/'
+            image: IMG2,
+            title: 'ReactFlix App with ThemovieApi',
+            github: 'https://github.com/unghung18/tmovie',
+            url: 'https://reactflix-eightt.vercel.app/'
         },
         {
             image: IMG4,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            url: 'https://dribbble.com/'
+            title: 'Portfolio Website',
+            github: 'https://github.com/unghung18/portfolio',
+            url: 'https://portfolio-ruby-sigma-54.vercel.app/'
         },
         {
             image: IMG5,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            url: 'https://dribbble.com/'
-        },
-        {
-            image: IMG6,
-            title: 'This is a portfolio item title',
-            github: 'https://github.com/ronglon182',
-            url: 'https://dribbble.com/'
-        },
-
+            title: 'E-Commerce Website',
+            github: 'https://github.com/unghung18/Lanie-Ecommerge-Web',
+            url: 'https://lanie-ecommerge-web.vercel.app/'
+        }
     ]
     return (
         <section className="portfolio">
@@ -56,8 +48,7 @@ function Portfolio() {
             <div className="container portfolio__container">
                 {dataPortfolio.map((item, index) => (
                     <article key={index} className="portfolio__item">
-                        <div className="portfolio__item-img">
-                            <img src={item.image} alt='portfolio-img' />
+                        <div className="portfolio__item-img" style={{ backgroundImage: `url(${item.image})` }}>
                         </div>
                         <h3>{item.title}</h3>
                         <a href={item.github} target='_blank' rel="noreferrer" className="btn">Github</a>

@@ -11,7 +11,7 @@ function Header() {
                 <div className="header__content">
                     <h5>Hello I'm</h5>
                     <h1>Ứng Hùng</h1>
-                    <h4 className="text-light">A Front-end Developer</h4>
+                    <h4 className="text-light">A Web Developer</h4>
                     <CTA />
                 </div>
 
